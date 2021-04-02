@@ -22,10 +22,13 @@ export default function FinancialData() {
 
 
     useEffect(()=>{
+        
         getFinancials();
+
     }, []);
 
-    function getFinancials() { 
+    async function getFinancials() { 
+        
         
         const apiName = 'YahooAPI';
         const path = `qu/quote/${companyCode}/financial-data`; 
@@ -38,7 +41,7 @@ export default function FinancialData() {
     response: false, 
 };
 
-         API.get(apiName, path, myInit).then(response => {
+         await API.get(apiName, path, myInit).then(response => {
             setFinancialData(response.financialData);
             console.log(response)
         }).catch(error => {
@@ -49,8 +52,9 @@ export default function FinancialData() {
     return (
         <div>
             <h2>Company Financial Data</h2>
-            <form id="input-form">
-                <input id="input-code" onKeyPress={(e)=>{e.target.keyCode === 13 && e.preventDefault(); getFinancials()}} type="text" value={companyCode} onChange={(e)=>{
+            <form onSubmit={e => e.preventDefault()} id="input-form">
+                <input onKeyUp={(event) => {
+                    if(event.key == 'Enter'){ getFinancials()} }} id="input-code" type="text" value={companyCode} onChange={(e)=>{
                     setCompanyCode(e.target.value)}}/>
             </form>
            

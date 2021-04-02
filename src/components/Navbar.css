@@ -31,10 +31,11 @@
 }
 
 #app-name{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     letter-spacing: 0.9rem;
     font-weight: 900;
-    margin-top: 8%;
+    margin-top: 5%;
+    margin-left: 1rem;
   }
   
   #app-name:hover{
