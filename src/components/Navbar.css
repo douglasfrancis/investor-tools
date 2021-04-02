@@ -61,4 +61,17 @@
       margin-top: 10%;
       margin-left: 1rem;
     }
+    .navbar button {
+     
+      padding: 0.5rem;
+      margin: 2rem 0.5rem;
+      width: 100px;
+      
+  }
+  }
+
+  @media only screen and (max-width: 650px) {
+    #app-name{
+      display: none;
+    }
   }
