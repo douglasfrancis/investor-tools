@@ -7,12 +7,32 @@ import FinancialData from './FinancialData';
 
 
 export default function Dashboard( {loggedIn}) {
+
+    const [widgetEditorOpen, setWidgetEditorOpen] = useState(false);
+    const [thirdWidget, setThirdWidget] = useState("")
+
+    function addNews () {
+        setThirdWidget("News");
+        setWidgetEditorOpen(false);
+    };
+
+    function addFinance () {
+        setThirdWidget("Finance")
+        setWidgetEditorOpen(false);
+    };
       
     return (
         <div className="dashboard">
+            {widgetEditorOpen && (<div id="widget-editor">
+                <h2>Add Widget</h2>
+
+                <button onClick={addNews}>News Feed</button>
+                <button onClick={addFinance}>Company Financial Data</button>
+                </div>)}
             
-            {loggedIn ? (<>
-            
+            {loggedIn ? (
+            <>
+
             <div className="dashboard-container" id="news-container">
                 <NewsFeed />
             </div>
@@ -21,13 +41,14 @@ export default function Dashboard( {loggedIn}) {
                 <FinancialData />
             </div>
 
-            <div className="dashboard-container" id="api-3">
-            <img id='add-widget' src={add}/>
+            <div onClick={()=> setWidgetEditorOpen(true)} className="dashboard-container" id="api-3">
+            {thirdWidget === "" && <img id='add-widget' src={add}/>}
+            {thirdWidget === "News" && <NewsFeed />}
+            {thirdWidget === "Finance" && <FinancialData />}
             
-            </div> </>) 
+            </div> 
+            </>) : (
             
-            :
-            (
                 <p id="not-signed-in">Please Log In {<Link to="/login">Here</Link>}</p>
 
             )}
