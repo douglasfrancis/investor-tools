@@ -1,0 +1,53 @@
+.navbar {
+    height: 15vh;
+    width: 100vw;
+    background-color: #424147;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar h2 {
+    color: white;
+}
+
+.navbar button {
+    color: #424147;
+    padding: 0.5rem;
+    margin: 2rem 1rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    width: 150px;
+    transition: 0.5s;
+    border: unset;
+}
+
+.navbar button:hover {
+    background-color: #95d42b;
+    color: white;
+    cursor: pointer;
+}
+
+#app-name{
+    font-size: 1.2rem;
+    letter-spacing: 0.9rem;
+    font-weight: 900;
+    margin-top: 8%;
+  }
+  
+  #app-name:hover{
+    cursor: pointer;
+  }
+  
+  #logo{
+    height: 70%;
+    position: absolute;
+    left: 0;
+    top: 15%;
+  }
+
+  #logo:hover{
+    cursor: pointer;
+  }

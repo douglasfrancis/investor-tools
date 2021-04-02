@@ -1,0 +1,76 @@
+.confirm-register{
+    z-index: 999;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 10%;
+    text-align: center !important;
+}
+
+form p{
+    color: #424147;
+    font-size: 1rem;
+    
+}
+
+.confirm-register form{
+    margin: 0 auto;
+}
+
+
+label{
+    color: #424147;
+    font-size: 1rem;
+    
+}
+
+input {
+    width: 100%;
+    height: 10%;
+    margin: 0.5rem auto;
+    border-radius: 10px;
+    padding-left: 1rem;
+    display: block;
+    border: unset;
+    background-color: #e8ebf2;
+    
+}
+
+form{
+    width: 70vw;
+    max-width: 1000px;
+    height: 60vh;
+    max-height: 1000px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0 10px 20px rgba(0, 0, 0 ,0.19), 0 6px 6px rgba(0, 0, 0, 0.23);;
+}
+
+.auth-btn{
+    background-color: #25a0e2;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 25px;
+    height: 8%;
+    border: 1px solid #25a0e2;
+    width: 20%;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.auth-btn:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+a{
+    color: #95d42b;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+}
