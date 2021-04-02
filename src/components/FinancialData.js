@@ -46,20 +46,17 @@ export default function FinancialData() {
         });
     };
 
-   
-
-    
     return (
         <div>
             <h2>Company Financial Data</h2>
             <form id="input-form">
-                <input onKeyPress={(e)=>{e.target.keyCode === 13 && e.preventDefault(); getFinancials()}} type="text" value={companyCode} onChange={(e)=>{
+                <input id="input-code" onKeyPress={(e)=>{e.target.keyCode === 13 && e.preventDefault(); getFinancials()}} type="text" value={companyCode} onChange={(e)=>{
                     setCompanyCode(e.target.value)}}/>
             </form>
            
                 <div>
                     {financialData ? (<>
-                    <p>Recommendation: {financialData.recommendationKey}</p>
+                    <h2 id='recommend'>Recommendation: {financialData.recommendationKey}</h2>
                     <p>Based on {financialData.numberOfAnalystOpinions.fmt} analyst opinions</p>
                     <table >
                         <tbody>

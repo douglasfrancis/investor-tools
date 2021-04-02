@@ -12,12 +12,10 @@
 
 #news-container{
     left: 1.5vw;
-    
 }
 
 #financial-container{
     left: 34.5vw;
-    
 }
 
 #api-3{
@@ -33,7 +31,6 @@
     height: 100px;
     width: 100px;
     margin-top: 50%;
-    
 }
 
 .dashboard-container p {
@@ -131,13 +128,14 @@
       background-color: #95d42b;
       border-radius: 50%;
       z-index: 999;
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
       color: white !important;
-    font-size: 1.5rem;
+    font-size: 1.2rem !important;
     font-weight: bold;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    
   }
  
 .close-widget:hover{
@@ -148,6 +146,11 @@
     height: 100%;
     width: 100%;
 }
+
+.img-container:hover{
+    cursor: pointer;
+}
+
 
 button:hover{
     cursor: pointer;
@@ -169,7 +172,13 @@ button{
     background-color: #95d42b ;
 }
 
+#input-code{
+    height: 40px;
+}
 
-
+#recommend{
+    color: #25a0e2;
+    background-color: white;
+}
 
 

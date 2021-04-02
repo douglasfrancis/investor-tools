@@ -43,9 +43,12 @@ export default function Dashboard( {loggedIn}) {
             <>
 
             <div className="dashboard-container" id="news-container">
-                {firstWidget === "" && <img id='add-widget' src={add}/>}
-                {firstWidget === "News" && <NewsFeed />}
-                {firstWidget === "Finance" && <FinancialData />}
+                <div>
+                    {firstWidget === "" && <div onClick={()=> setWidgetEditorOpen(true)} className="img-container"><img id='add-widget' src={add}/></div>}
+                    {firstWidget === "News" && <NewsFeed />}
+                    {firstWidget === "Finance" && <FinancialData />}
+                </div>
+                {firstWidget !== "" && <p onClick={()=>{setFirstWidget("")}} className="close-widget">-</p>}
                 
             </div>
 
