@@ -55,6 +55,8 @@ form{
     height: 8%;
     border: 1px solid #25a0e2;
     width: 20%;
+    min-width: 100px;
+    min-height: 30px;
     margin-top: 1rem;
     text-transform: uppercase;
     transition: 0.3s;

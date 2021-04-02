@@ -181,4 +181,44 @@ button{
     background-color: white;
 }
 
+@media only screen and (max-width: 770px) {
+    .dashboard-container{
+      width: 90vw;
+      height: 50vh;
+    }
+
+    .dashboard{
+        overflow-y: scroll !important;
+        background-color: #e8ebf2;
+        
+    }
+
+    #news-container{
+        left: 5vw;
+        top: 20%;
+    }
+    
+    #financial-container{
+        left: 5vw;
+        top: 75%;
+    }
+    
+    #api-3{
+        left: 5vw;
+        top: 130%;
+        
+    }
+
+    .loader {
+        margin: 15% auto;
+        height: 90px;
+        width: 90px;
+      }
+
+      #add-widget{
+        height: 50px;
+        width: 50px;
+        margin-top: 20%;
+    }
+  }
 

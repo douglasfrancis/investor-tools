@@ -5,6 +5,7 @@
   text-align: center;
   background-color: #e8ebf2;
   min-height: 100vh;
+  height: 200%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,3 +18,8 @@ h2 {
   color: #424147;
 }
 
+@media only screen and (max-width: 770px){
+  .App {
+    overflow-y: scroll;
+  }
+}

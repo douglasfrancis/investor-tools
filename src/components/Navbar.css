@@ -31,10 +31,10 @@
 }
 
 #app-name{
-    font-size: 1.6rem;
-    letter-spacing: 0.9rem;
+    font-size: 90%;
+    letter-spacing: 0.5rem;
     font-weight: 900;
-    margin-top: 5%;
+    margin-top: 8%;
     margin-left: 1rem;
   }
   
@@ -51,4 +51,14 @@
 
   #logo:hover{
     cursor: pointer;
+  }
+
+  @media only screen and (max-width: 880px) {
+    #app-name{
+      font-size: 70%;
+      letter-spacing: 0.5rem;
+      font-weight: 900;
+      margin-top: 10%;
+      margin-left: 1rem;
+    }
   }
