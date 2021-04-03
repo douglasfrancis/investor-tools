@@ -111,7 +111,7 @@
       text-align: right;
   }
 
-  #widget-editor{
+  .widget-editor{
       width: 60vw;
       height: 40vw;
       z-index: 999;
@@ -226,7 +226,7 @@ button{
       
     }
 
-    #widget-editor{
+    .widget-editor{
         width: 80vw;
         height: 80vw;
         top: 20vh;
