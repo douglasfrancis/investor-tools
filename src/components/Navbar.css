@@ -22,6 +22,8 @@
     width: 150px;
     transition: 0.5s;
     border: unset;
+    max-height: 40px;
+    
 }
 
 .navbar button:hover {
