@@ -16,10 +16,17 @@
 
 h2 {
   color: #424147;
+  
 }
 
 @media only screen and (max-width: 770px){
   .App {
     overflow-y: scroll;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  h2 {
+    font-size: 30px;
   }
 }

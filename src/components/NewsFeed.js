@@ -29,7 +29,7 @@ export default function NewsFeed() {
         const path = 'ne/news'; 
         const myInit = { 
     headers: {
-        "x-rapidapi-key": "945191d9a0mshfec942945d59dc1p149c10jsn210938bab534",
+        "x-rapidapi-key": "5bbd4c8cabmshfaf7fcfa069e60dp130430jsn2edf3067c7ff",
 	"x-rapidapi-host": "yahoo-finance15.p.rapidapi.com",
 	"useQueryString": "true"
     }, 
